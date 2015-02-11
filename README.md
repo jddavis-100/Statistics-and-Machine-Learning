@@ -11,7 +11,7 @@ Here you will find some use cases for common Data Science (statistics and machin
 5. Probabilities
 6. Linear Regressions
 7. Non-linear Regressions
-8. Iterative Functions
+8. Inference
 9. Visualization
 10. Data Evaluation
 11. Data Transformation
