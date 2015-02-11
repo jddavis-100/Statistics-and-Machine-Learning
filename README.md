@@ -15,7 +15,7 @@ Here you will find some use cases for common Data Science (statistics and machin
 9. Visualization
 10. Data Evaluation
 11. Data Transformation
-12. Graph Problems and Probablistic Networks
+12. Graph Problems & Probablistic Networks
 13. Neural Networks & Deep Learning (e.g. Sentiment Analysis)
 14. Spark for Parallel Processing in ML
 
