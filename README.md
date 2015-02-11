@@ -7,7 +7,7 @@ Here you will find some use cases for common Data Science (statistics and machin
 1. Optimization Algorithms
 2. Clustering Algorithms
 3. Classification Algorithms
-4. Collaborative Filtering (Recommender Engines)
+4. Collaborative Filtering (e.g. Recommender Engines)
 5. Probabilities
 6. Linear Regressions
 7. Non-linear Regressions
@@ -15,7 +15,9 @@ Here you will find some use cases for common Data Science (statistics and machin
 9. Visualization
 10. Data Evaluation
 11. Data Transformation
-12. Spark for Parallel Processing in ML
+12. Graph Problems and Probablistic Networks
+13. Neural Networks & Deep Learning (e.g. Sentiment Analysis)
+14. Spark for Parallel Processing in ML
 
 
 
