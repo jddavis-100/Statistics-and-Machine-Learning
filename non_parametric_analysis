@@ -1,13 +1,17 @@
 #Children z-score analyses in developing country
 #load library and make summary plots
+
 library(ggplot2)
 setwd("~/PathToYourData")
+
 #load the data and assign a vector
+
 data.gc <- read.csv("~/PathToYourData", header=TRUE)
 mydata <- read.table("~/PathToYourData", header = TRUE,
                      sep=",")
 
 #remove missing values and subset data by gender
+
 clean_mydata <- na.omit(mydata)
 head(clean_mydata) #check the dataframe looks ok
 tail(clean_mydata) #check the dataframe looks ok
@@ -91,9 +95,9 @@ qplot(zhfa, data=boys, geom="histogram")
 
 #load libraries for univariate analysis and machine learning
 #use subsetted data
+
 library(fBasics)
 library(caret)
-library(kernlab)
 library(pastecs)
 #statistics, univariate on cleaned and subsetted data
 options(scipen=100)
@@ -123,13 +127,13 @@ median(girls$zhfa)
 median(boys$zhfa)
 
 #since there is some skew by visual assessment and summary stats (compare mean to median)
-#we will determine how much skew and whether a transformation is necessary
-#in this instance we will probably do a log transformation
-#skewness is a measure of symmetry and tells us which tests we can reasonably apply to the data
-# in its current state and whether or not we need to do a transformation
+
+#we will determine how much skew and whether a transformation is necessary. In this instance we will probably do a log transformation or choose a non-parametric test depending upon outcomes of skewness and kurtosis.
+#Skewness is a measure of symmetry and tells us which tests we can reasonably apply to the data
+#In its current state we need to decide whether or not we need to do a transformation
 #Kurtosis will tells use whether the data are peaked or flat realative to a normal distribution
-#if the distribution is not normal, then a transformation to normalize is necessary
-#or a different set of tests could be used to test for true differences
+#if the distribution is not normal, then a transformation to normalize is necessary or choosing another appropriate option, e.g. non-parametric test 
+#A different set of tests could be used to test for true differences as well.
 
 skewness(clean_mydata$zhfa)
 skewness(clean_mydata$zbfa)
@@ -141,8 +145,9 @@ skewness(boys$zhfa)
 #Kurtosis for a standard normal distribution is 3, but we are calculating excess kurtosis
 #thus the SND is set to zero and kurtosis is relative to that zero
 #we see there is some skew so we look at the kurtosis to determine what type of skew
-#and severity...this tells us whether we need to do a data transformation prior
+#and severity
 #to a t-test between groups
+
 library(e1071)
 kurtosis(girls$zwfa)
 kurtosis(girls$zhfa)
@@ -150,6 +155,7 @@ kurtosis(girls$zbfa)
 kurtosis(boys$zwfa)
 kurtosis(boys$zhfa)
 kurtosis(boys$zbfa)
+
 #here we see that the outcome is "excess" curtosis, for all the z-scores, so we will need to normalize the data
 #however when we look at the numbers the only skew over 1 is boys zhfa, zbfa, girls zhfa is also over 0.5 kurtosis
 #determine the degree of normality problems using Shapiro-Wilk normality test
@@ -157,6 +163,7 @@ kurtosis(boys$zbfa)
 #non-parametric test
 #here I will choose a non-parametric t-test since data transformation is not going to be easy on
 #a dataset with lots of missing values and skew.  Interpret: if p<0.01 then its significantly altered from the normal distribution
+
 shapiro.test(girls$zhfa)
 shapiro.test(girls$zwfa)
 shapiro.test(girls$zbfa)
@@ -165,6 +172,7 @@ shapiro.test(boys$zwfa)
 shapiro.test(boys$zbfa)
 
 #now we will analyze the flagged scores (boys and girls that are outside WHO limits)
+
 shapiro.test(girls$fhfa)
 shapiro.test(girls$fwfa)
 shapiro.test(girls$fbfa)
@@ -206,10 +214,9 @@ stat.desc(boys)
 dim(girls)
 dim(boys)
 
-#we will now print out the girls and boys flagged for z-scores severely below normgirls_flagged_fhfa <- subset(girls_all, fhfa==1)
-#an analysis of the data however shows that the flagging didn't work correctly, i.e. not all the scores that should be flagged are flagged
-#to correct this I made a sub-set of all the children with severely low z-scores and output it to csv files
-girls_flagged_fhfa
+#We will now print out the girls and boys flagged for z-scores severely below normgirls_flagged_fhfa <- subset(girls_all, fhfa==1)
+#An analysis of the data however shows that the flagging didn't work correctly, i.e. not all the scores that should be flagged are flagged
+#To correct this I made a sub-set of all the children with severely low z-scores and output it to csv files
 
 girls_flagged_fwfa <- subset(girls_all, fwfa==1)
 girls_flagged_fwfa
