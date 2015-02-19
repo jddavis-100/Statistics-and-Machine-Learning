@@ -1,4 +1,4 @@
-#Mircle Foundation z-score analyses
+#Children z-score analyses in developing country
 #load library and make summary plots
 library(ggplot2)
 setwd("~/PathToYourData")
