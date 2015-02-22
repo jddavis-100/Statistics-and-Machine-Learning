@@ -128,11 +128,13 @@ median(boys$zhfa)
 
 #since there is some skew by visual assessment and summary stats (compare mean to median)
 
-#we will determine how much skew and whether a transformation is necessary. In this instance we will probably do a log transformation or choose a non-parametric test depending upon outcomes of skewness and kurtosis.
+#we will determine how much skew and whether a transformation is necessary. In this instance we will probably do a 
+#log transformation or choose a non-parametric test depending upon outcomes of skewness and kurtosis.
 #Skewness is a measure of symmetry and tells us which tests we can reasonably apply to the data
 #In its current state we need to decide whether or not we need to do a transformation
 #Kurtosis will tells use whether the data are peaked or flat realative to a normal distribution
-#if the distribution is not normal, then a transformation to normalize is necessary or choosing another appropriate option, e.g. non-parametric test 
+#if the distribution is not normal, then a transformation to normalize is necessary or choosing another appropriate option, 
+#e.g. non-parametric test 
 #A different set of tests could be used to test for true differences as well.
 
 skewness(clean_mydata$zhfa)
@@ -156,13 +158,14 @@ kurtosis(boys$zwfa)
 kurtosis(boys$zhfa)
 kurtosis(boys$zbfa)
 
-#here we see that the outcome is "excess" curtosis, for all the z-scores, so we will need to normalize the data
+#here we see that the outcome is "excess" kurtosis, for all the z-scores, so we will need to normalize the data
 #however when we look at the numbers the only skew over 1 is boys zhfa, zbfa, girls zhfa is also over 0.5 kurtosis
 #determine the degree of normality problems using Shapiro-Wilk normality test
 #this test tells us if we really do have to worry about the skew and do a data transformation or
 #non-parametric test
 #here I will choose a non-parametric t-test since data transformation is not going to be easy on
-#a dataset with lots of missing values and skew.  Interpret: if p<0.01 then its significantly altered from the normal distribution
+#a dataset with lots of missing values and skew.  Interpret: if p<0.01 then its significantly altered from the 
+#normal distribution
 
 shapiro.test(girls$zhfa)
 shapiro.test(girls$zwfa)
@@ -214,9 +217,11 @@ stat.desc(boys)
 dim(girls)
 dim(boys)
 
-#We will now print out the girls and boys flagged for z-scores severely below normgirls_flagged_fhfa <- subset(girls_all, fhfa==1)
-#An analysis of the data however shows that the flagging didn't work correctly, i.e. not all the scores that should be flagged are flagged
-#To correct this I made a sub-set of all the children with severely low z-scores and output it to csv files
+#We will now print out the girls and boys flagged for z-scores severely below 
+#normgirls_flagged_fhfa <- subset(girls_all, fhfa==1)
+#An analysis of the data however shows that the flagging didn't work correctly, i.e. not all the scores that should be flagged
+#are flagged
+#To correct this we made a sub-set of all the children with severely low z-scores and output it to csv files
 
 girls_flagged_fwfa <- subset(girls_all, fwfa==1)
 girls_flagged_fwfa
