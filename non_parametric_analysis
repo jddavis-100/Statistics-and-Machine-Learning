@@ -189,8 +189,8 @@ girls$fbfa
 boys$fhfa
 
 #non-parametric test
-#here we use a substitute for t-test called the independent 2-group Mann-Whitney U Test which corrects
-#for lack of continuity
+#here we use a substitute for t-test called the independent 2-group Mann-Whitney-Wilcoxin Univariate Test which corrects
+#for lack of continuity, and is an appropriate substitute for Student's T-test
 #determine if there is a true difference in zbfa btwn boys an girls
 
 
