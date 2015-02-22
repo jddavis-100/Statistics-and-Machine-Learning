@@ -100,6 +100,7 @@ qplot(zhfa, data=boys, geom="histogram")
 library(fBasics)
 library(caret)
 library(pastecs)
+
 #statistics, univariate on cleaned and subsetted data
 options(scipen=100)
 options(digits=10)
