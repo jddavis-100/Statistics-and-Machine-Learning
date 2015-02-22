@@ -19,5 +19,5 @@ Here you will find some use cases for common Data Science (statistics and machin
 13. Neural Networks & Deep Learning (e.g. Sentiment Analysis)
 14. Spark for Parallel Processing in ML
 
-
+[Click here for Most Up-to-Date Table of Contents](https://github.com/jddavis-100/Statistics-and-Machine-Learning/wiki/Welcome-&-Table-of-Contents)
 
