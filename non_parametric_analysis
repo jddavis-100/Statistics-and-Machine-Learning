@@ -89,6 +89,7 @@ qplot(age.mo, zwfa, colour=age.mo, data=boys)
 #qplot(zhfa, data=data, geom="histogram") #suggests skew, should sepparate by gender
 #qplot(zwfa, data=data, geom="histogram") #no skew
 #qplot(zbfa, data=data, geom="histogram") #suggests skew, should sepparate by gender
+
 qplot(zhfa, data=girls, geom="histogram")
 qplot(zhfa, data=boys, geom="histogram")
 
@@ -126,15 +127,17 @@ mean_zhfa_boys
 median(girls$zhfa)
 median(boys$zhfa)
 
-#since there is some skew by visual assessment and summary stats (compare mean to median)
-
+#Since there is some skew by visual assessment and summary stats (compare mean to median)
 #we will determine how much skew and whether a transformation is necessary. In this instance we will probably do a 
 #log transformation or choose a non-parametric test depending upon outcomes of skewness and kurtosis.
 #Skewness is a measure of symmetry and tells us which tests we can reasonably apply to the data
+
 #In its current state we need to decide whether or not we need to do a transformation
+
 #Kurtosis will tells use whether the data are peaked or flat realative to a normal distribution
 #if the distribution is not normal, then a transformation to normalize is necessary or choosing another appropriate option, 
 #e.g. non-parametric test 
+
 #A different set of tests could be used to test for true differences as well.
 
 skewness(clean_mydata$zhfa)
@@ -211,6 +214,7 @@ h <- girls$Weight
 wilcox.test(g,h)
 
 #final descriptive stats
+
 stat.desc(clean_mydata)
 stat.desc(girls)
 stat.desc(boys)
