@@ -1,6 +1,7 @@
 
 """
-A simple way to call reviews or data from any api.  It will allow users to input special keys to run their code.
+A simple way to call data from any api and prompt user for input.  Alternatively code can be modified to pass a list of argument.
+This code will allow users to input special keys or IDs to run their code.
 """
 import requests
 
