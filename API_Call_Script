@@ -1,0 +1,19 @@
+
+"""
+A simple way to call reviews or data from any api.  It will allow users to input special keys to run their code.
+"""
+import requests
+
+def getData():
+    print "please load the movie id or movie id list"
+    item_id=raw_input("?")
+    payload = {'apikey': 'secret-key-for-api'}
+    url = "http://api.of.your.choice/%s/item.json" % item_id
+    r = requests.get(url, params=payload)
+    r.text
+    print(r.url)
+    r.json()
+    print r.json()
+
+if __name__ == "__main__":
+   getData() 
