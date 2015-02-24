@@ -1,7 +1,7 @@
 """
 This code is an example of how to write a map reduce program in python.
-This is helpful for writing a simple MapReduce program for Hadoop
-in python programming language. For more information on MapReduce and Hadoop Streaming,
+This is helpful for writing a simple MapReduce program for streaming on Hadoop. 
+For more information on MapReduce and Hadoop Streaming,
 see the wiki page titled Hadoop Streaming and MapReduce.  References are also listed on the wiki.
 
 """
