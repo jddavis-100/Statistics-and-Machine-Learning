@@ -20,6 +20,7 @@ This site will be filled with more code as time progresses, so feel free to chec
 12. Graph Problems & Probablistic Networks
 13. Neural Networks & Deep Learning (e.g. Sentiment Analysis)
 14. Spark for Parallel Processing in ML
+15. MapReduce and Hadoop Scripts
 
 [Click here for Most Up-to-Date Table of Contents](https://github.com/jddavis-100/Statistics-and-Machine-Learning/wiki/Welcome-&-Table-of-Contents)
 
