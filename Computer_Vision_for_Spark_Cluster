@@ -1,0 +1,3 @@
+#two versions of a computer vision algorithm will the implemented for the Kaggle Competition Data Science bowl
+#the first is to be run on a spark cluster and the second is a high performance implementation
+#more to come later!
