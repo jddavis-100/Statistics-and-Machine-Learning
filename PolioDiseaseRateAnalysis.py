@@ -178,9 +178,10 @@ sns.pairplot(df.south, hue="state", vars=('epi_week', 'inc'),
              
 """Our final visual assessment shows something quite interesting.  It looks
 as though a peak in polio incidence occurred in MA, CA and IL in the 1940s, 
-but TX peaked in the 1960s.  It would be interesting to explore the data
+but TX peaked in the late 1950s.  It would be interesting to explore the data
 further to determine if this is a real effect and if so to explore history
-to determine why there was a lag in decline of polio in TX""" 
+to determine why there was a lag in decline of polio in TX.  More number
+crunching would be necessary to verify our visual assessment.""" 
              
              
 
