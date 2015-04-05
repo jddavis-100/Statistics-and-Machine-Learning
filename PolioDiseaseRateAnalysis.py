@@ -76,6 +76,8 @@ df3
 from scipy.stats.mstats import mquantiles
 print ('quantiles:', mquantiles(df.inc))
 
+#make your first visual
+
 import seaborn as sns
 
 sns.set(style="white", palette="muted")
@@ -97,7 +99,7 @@ pd.value_counts(s) #the data on the frequency of values
 df3.describe()
 
 """We see that first year for Polio monitoring was 1928 and the last year with
-a significant count was 1968. For Polio subset 81531 records exist in the data set
+a significant count was 1968. For Polio subset 81531 records exist in the data set.
 The maximum incidence ratio during this time period was 33 and minimum
 was zero. """
 
@@ -122,7 +124,7 @@ fig = sm.qqplot(res)
 plt.show()
 
 #the problem with a linear regression model may be that at about -1 quantiles
-#the samples flatten out...again this is due to the advent of vaccination most likely
+#the samples flatten out, i.e. there is little variability...again this is due to the advent of vaccination most likely
 
 pp_x = sm.ProbPlot(x, fit=True)
 x = df3.epi_week
@@ -142,7 +144,7 @@ sns.pairplot(df3, hue="state", vars=('epi_week', 'population', 'inc'),
              size=7.5)
              
 """The new visual assessment shows that incidence of polio grew before it was
-virtually eliminated by 1968.  Since we do see some variability by state we 
+virtually eliminated by 1988.  Since we do see some variability by state we 
 might want to subset again by region of the country.  However that's another
 lesson!  For this lesson we will compare Texas (south) to California (west)
 to Massachusetts(east), to Illinois(north) """
@@ -177,7 +179,7 @@ sns.pairplot(df.south, hue="state", vars=('epi_week', 'inc'),
              size=5) #TX you can see the incidence peaked in the 1960s
              
 """Our final visual assessment shows something quite interesting.  It looks
-as though a peak in polio incidence occurred in MA, CA and IL in the 1940s, 
+as though a peak in polio incidence occurred in MA, CA and IL in the late 1940s, 
 but TX peaked in the late 1950s.  It would be interesting to explore the data
 further to determine if this is a real effect and if so to explore history
 to determine why there was a lag in decline of polio in TX.  More number
