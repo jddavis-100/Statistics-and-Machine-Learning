@@ -20,7 +20,7 @@ import csv
 
 #first order of business is taking a peak at the dataset
 
-data_file = "/Users/Work/Desktop/disease.hx.csv"
+data_file = "/your data path/disease.hx.csv"
 with open(data_file, 'r') as csvfile:
     reader = csv.DictReader(csvfile)
     data = list(reader)
@@ -60,7 +60,7 @@ print ('last year of observations', max(set(int(row["epi_week"]) for row in data
 import csv
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('/Users/Work/Desktop/disease.hx.csv', index_col='id')                      
+df = pd.read_csv('/your data path/disease.hx.csv', index_col='id')                      
 
 #let's look at some summary statistics and do a regression
 df.dtypes #see what the variables are and their data type
