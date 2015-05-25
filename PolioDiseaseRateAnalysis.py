@@ -7,7 +7,7 @@ Created on Fri Apr  3 19:31:55 2015
 A visual analysis of polio disease rates
 from 1888-2013
 
-Most of the data in this set are preventable with vaccination.
+Most of the data in this set are about diseases that are preventable with vaccination.
 
 website for data: https://www.healthdata.gov
 Data set : ProjectTyco_Level1
