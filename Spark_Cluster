@@ -1,1 +1,29 @@
-#basic recipe for setting up your own Spark Cluster using PySpark
+#basic recipe for setting up your own Spark Cluster using PySpark; 90% taken from 
+#https://spark.apache.org/docs/latest/programming-guide.html
+#this is just a light code base to use and modify; it doesn't have all the text from the website and I modified a few items
+
+import pyspark
+from pyspark import SparkContext, SparkConf
+
+#spark context tells spark to create a cluster
+
+conf = SparkConf().setAppName(appName).setMaster(master)
+sc = SparkContext(conf=conf)
+
+#in the command line you will then fire up the pyspark shell as follows
+
+./bin/pyspark --master local[4] --py-files code.py #this is a way you can import your code files if you want to run ML algorithms or other types of analyses
+
+#now you will have your shell up and you will make your Resilient Distributed Datasets (this is similar to an older concept of using paralell algebra as a model for object databases...more on that another time; in any event you'll next want to make parallelized collections
+
+data = np.array[1,2,3,4,5]
+distData = sc.parallelize(data) #now you have greated the parallel distribution of the data
+rddDistData = dist.Data.saveAsSequenceFile('path/to/file')
+sorted(sc.sequenceFile('piath/to/file').collect())
+
+#next task is to actually pass functions to Spark...or you can also have fun using elasticsearch on the hadoop platform
+#to do this you'd use the predefined elasticsearch-hadoop.jar which is nice since the jar will run perfectly well in Python environment
+#more plus an Jupyter notebook with data analysis example at a later time
+
+
+
