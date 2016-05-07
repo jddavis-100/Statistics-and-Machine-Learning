@@ -1,13 +1,3 @@
-library(shiny)
-library(curl)
-
-getPolioData <- function(){
-        fileUrl <- "https://docs.google.com/spreadsheets/d/1sAs4NPoG-oKpC8D2T9VsOgfc7uXLaCHPHUVcm_msxIk/pub?gid=965821679&single=true&output=csv"
-        download.file(url = fileUrl, destfile = "~/data.csv", mode="w", method = "curl")
-        }
-getPolioData()
-polioData <- read.csv("~/data.csv")
-
 shinyServer(function(input, output){
                 output$table <- renderDataTable({polioData})
                 output$newHist <- renderPlot({
