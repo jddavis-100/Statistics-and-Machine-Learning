@@ -1,0 +1,45 @@
+""," Video.Number"," Age.of.Child","Corpus.Number","                                                                                                                                                                          Machine.Intelligence.Answer","  MIA_anger"," MIA_contempt"," MIA_disgust","   MIA_fear","MIA_happiness"," MIA_neutral"," MIA_sadness"," MIA_surprise","   Kefan.Answer","                                 FaceID","     bald","haircolor","Age.according.to.Face.API"
+"","Min.   : 1.0  ","4      :22  ","Min.   : 1.0  ","        ""anger"": 0.0,
+        ""contempt"": 0.0,
+        ""disgust"": 0.0,
+        ""fear"": 0.0,
+        ""happiness"": 1.0,
+        ""neutral"": 0.0,
+        ""sadness"": 0.0,
+        ""surprise"": 0.0
+  : 8  ","Min.   :0.000000  ","Min.   :0.000000  ","Min.   :0.000000  ","Min.   :0.000000  ","Min.   :0.0000  ","Min.   :0.0000  ","Min.   :0.00000  ","Min.   :0.00000  ","         : 4  ","                                    : 4  ","Min.   :0.0000  ","     : 4  ","4      :22  "
+"","1st Qu.:25.5  ","6      :18  ","1st Qu.:25.5  ","                                                                                                                                                                                                        : 4  ","1st Qu.:0.000000  ","1st Qu.:0.000000  ","1st Qu.:0.000000  ","1st Qu.:0.000000  ","1st Qu.:0.0000  ","1st Qu.:0.0105  ","1st Qu.:0.00000  ","1st Qu.:0.00000  ","Anger    : 2  ","032c21ab-d340-45fa-bb66-0427d6e3d9aa: 1  ","1st Qu.:0.0300  ","black: 9  ","6      :18  "
+"","Median :50.0  ","5      :16  ","Median :50.0  ","        ""anger"": 0.0,
+        ""contempt"": 0.0,
+        ""disgust"": 0.0,
+        ""fear"": 0.0,
+        ""happiness"": 0.0,
+        ""neutral"": 1.0,
+        ""sadness"": 0.0,
+        ""surprise"": 0.0
+  : 4  ","Median :0.000000  ","Median :0.000000  ","Median :0.000000  ","Median :0.000000  ","Median :0.0100  ","Median :0.7050  ","Median :0.00100  ","Median :0.00000  ","Happiness:26  ","056d633f-35d5-4957-981b-eac8047b7e9b: 1  ","Median :0.0500  ","blond:32  ","5      :16  "
+"","Mean   :50.0  ","3      : 9  ","Mean   :50.0  ","        ""anger"": 0.0,
+        ""contempt"": 0.0,
+        ""disgust"": 0.0,
+        ""fear"": 0.0,
+        ""happiness"": 1.0,
+        ""neutral"": 0.0,
+        ""sadness"": 0.0,
+        ""surprise"": 0.0    : 4  ","Mean   :0.009916  ","Mean   :0.005358  ","Mean   :0.009979  ","Mean   :0.003926  ","Mean   :0.4244  ","Mean   :0.5557  ","Mean   :0.01614  ","Mean   :0.06871  ","Neutral  :62  ","098313b8-dfd8-418f-9791-2324e2a9a892: 1  ","Mean   :0.1128  ","brown:52  ","3      : 9  "
+"","3rd Qu.:74.5  ","7      : 9  ","3rd Qu.:74.5  ","        ""anger"": 0.0,
+        ""contempt"": 0.0,
+        ""disgust"": 0.0,
+        ""fear"": 0.0,
+        ""happiness"": 0.0,
+        ""neutral"": 0.999,
+        ""sadness"": 0.001,
+        ""surprise"": 0.0: 2  ","3rd Qu.:0.000000  ","3rd Qu.:0.000000  ","3rd Qu.:0.000000  ","3rd Qu.:0.000000  ","3rd Qu.:0.9285  ","3rd Qu.:0.9815  ","3rd Qu.:0.00500  ","3rd Qu.:0.00850  ","Sadness  : 5  ","0d071fff-f814-4dfb-8e88-7be6cbbf3878: 1  ","3rd Qu.:0.1100  ","red  : 2  ","7      : 9  "
+"","Max.   :99.0  ","8      : 6  ","Max.   :99.0  ","        ""anger"": 0.0,
+        ""contempt"": 0.0,
+        ""disgust"": 0.0,
+        ""fear"": 0.0,
+        ""happiness"": 0.997,
+        ""neutral"": 0.003,
+        ""sadness"": 0.0,
+        ""surprise"": 0.0: 2  ","Max.   :0.625000  ","Max.   :0.392000  ","Max.   :0.654000  ","Max.   :0.345000  ","Max.   :9.9910  ","Max.   :1.0000  ","Max.   :0.46200  ","Max.   :0.92500  ",NA,"10167626-88aa-4160-8644-cd4376b8b12b: 1  ","Max.   :1.0000  ",NA,"8      : 6  "
+"",NA,"(Other):19  ",NA,"(Other)                                                                                                                                                                                                 :75  ","NA's   :4  ","NA's   :4  ","NA's   :4  ","NA's   :4  ","NA's   :4  ","NA's   :4  ","NA's   :4  ","NA's   :4  ",NA,"(Other)                             :90  ","NA's   :4  ",NA,"(Other):19  "
